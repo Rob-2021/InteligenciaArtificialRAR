@@ -231,6 +231,18 @@ class EigthPuzzleProblem(ProblemaBusqueda):
         if columna_e < 1:
             acciones.append(filas[fila_e][columna_e + 1])
 
+        if fila_e == 0 and columna_e > 0:
+            acciones.append(filas[fila_e + 1][columna_e - 1])
+
+        if fila_e == 0 and columna_e < 1:
+            acciones.append(filas[fila_e + 1][columna_e + 1])
+
+        if fila_e == 2 and columna_e < 1:
+            acciones.append(filas[fila_e - 1][columna_e + 1])
+
+        if fila_e == 2 and columna_e > 0:
+            acciones.append(filas[fila_e - 1][columna_e - 1])
+
         return acciones
 
     def resultado(self, estado, accion):
@@ -246,6 +258,7 @@ class EigthPuzzleProblem(ProblemaBusqueda):
 
     def es_objetivo(self, estado):
         '''Devuelve True si un estado es el estado_objetivo.'''
+        #print(estado)
         return estado == OBJETIVO
 
     def costo(self, estado1, accion, estado2):
