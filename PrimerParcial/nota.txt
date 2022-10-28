@@ -1,0 +1,12 @@
+Para resolver el problema del puzzle de 3x2
+utilizado el algoritmo AEstrella y la huristica
+manhattan: Una heurística admisible es usada para estimar 
+el coste de alcanzar el estado objetivo en un algoritmo de 
+búsqueda informada. Una heurística será admisible para 
+cierto problema de búsqueda cuando el coste estimado sea
+ siempre menor o igual que el coste mínimo de alcanzar el
+ estado objetivo. El algoritmo de búsqueda usa la heurística
+ para encontrar una estimación del camino óptimo hasta el objetivo
+ desde el nodo actual.
+
+Link del repositorio:
