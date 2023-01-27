@@ -111,7 +111,7 @@ if __name__ == '__main__':
     ]
  
     src = (0, 0)
-    dest = (7, 5)
+    dest = (9, 9)
  
     min_dist = longitudRutaCorta(mat, src, dest)
  
